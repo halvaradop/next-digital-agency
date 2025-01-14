@@ -2,7 +2,7 @@ import { Button } from "@halvaradop/ui-button"
 import { ServiceIncludesProps } from "@/lib/@types/props"
 import { ServiceList } from "./service-list"
 
-export const ServicesIncludes = ({ title, description, button, services }: ServiceIncludesProps) => {
+export const ServiceDetails = ({ title, description, button, services }: ServiceIncludesProps) => {
     return (
         <section>
             <div className="py-10 px-4 border border-b-0 border-grey-600 sm:py-11 sm:px-5 md:py-12 md:px-6 base:py-14 base:px-7">

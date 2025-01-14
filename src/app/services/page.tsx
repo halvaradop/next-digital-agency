@@ -2,7 +2,7 @@ import Image from "next/image"
 import logoIcon from "@/assets/logo.svg"
 import { Button } from "@halvaradop/ui-button"
 import { design, engineering, projectManagement } from "@/lib/data"
-import { ServicesIncludes } from "@/ui/services/service-includes"
+import { ServiceDetails } from "@/ui/services/service-details"
 
 const ServicesPage = () => {
     return (
@@ -13,19 +13,19 @@ const ServicesPage = () => {
                     Transform your brand with our innovatie digital solutions that captive and engage your audience
                 </p>
             </div>
-            <ServicesIncludes
+            <ServiceDetails
                 title={design.title}
                 description={design.description}
                 button={design.button}
                 services={design.services}
             />
-            <ServicesIncludes
+            <ServiceDetails
                 title={engineering.title}
                 description={engineering.description}
                 button={engineering.button}
                 services={engineering.services}
             />
-            <ServicesIncludes
+            <ServiceDetails
                 title={projectManagement.title}
                 description={projectManagement.description}
                 button={projectManagement.button}

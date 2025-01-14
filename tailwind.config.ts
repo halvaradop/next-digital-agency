@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import plugin from "tailwindcss/plugin"
 import utilities from "@halvaradop/tailwindcss-utilities"
 
 export default {
@@ -36,6 +37,17 @@ export default {
                 },
             },
         },
+        nth: {
+            1: "1",
+            2: "2",
+            3: "3",
+            4: "4",
+        },
     },
-    plugins: [utilities],
+    plugins: [
+        utilities,
+        plugin(({ matchVariant, theme }) => {
+            matchVariant("nth", (value) => `&:nth-child(${value})`, { values: theme("nth") })
+        }),
+    ],
 } satisfies Config

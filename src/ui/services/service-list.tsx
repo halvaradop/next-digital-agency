@@ -3,7 +3,7 @@ import { IconSquare } from "./icon"
 
 export const ServiceList = ({ title, services }: ServiceListProps) => {
     return (
-        <section className="border border-b-0 border-grey-600 service">
+        <section className="border border-b-0 border-grey-600">
             <h2 className="py-8 text-grey-100 text-xl font-semibold text-center border-b border-grey-600 sm:py-10 md:py-11 base:py-12 base:pl-7 base:text-left">
                 {title}
             </h2>

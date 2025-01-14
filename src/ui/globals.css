@@ -3,27 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-    .service .service-item {
-        &:nth-child(1),
-        &:nth-child(2) {
-            @apply border-b border-grey-600;
-        }
-
-        &:nth-child(1),
-        &:nth-child(3) {
-            @apply border-r border-grey-600;
-        }
-
-        @media (width >= 900px) {
-            & {
-                @apply border-r last:border-r-0;
-            }
-
-            &:nth-child(1),
-            &:nth-child(2) {
-                @apply border-b-0;
-            }
-        }
+    .service-item {
+        @apply border-grey-600 first:border-b first:border-r nth-2:border-b nth-3:border-r sm:border-r sm:last:border-r-0 sm:first:border-b-0 sm:nth-2:border-b-0;
     }
 }
 
