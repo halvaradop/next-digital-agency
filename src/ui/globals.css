@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .service .service-item {
+        &:nth-child(1),
+        &:nth-child(2) {
+            @apply border-b border-grey-600;
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            @apply border-r border-grey-600;
+        }
+
+        @media (width >= 900px) {
+            & {
+                @apply border-r last:border-r-0;
+            }
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                @apply border-b-0;
+            }
+        }
+    }
+}
+
+@layer utilities {
+    .bg-gradient-service {
+        border: 1px solid #2e2e2e;
+        background: linear-gradient(229deg, rgba(158, 255, 0, 0.2) -68.25%, rgba(158, 255, 0, 0) 32.16%),
+            linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+    }
+}

@@ -1,0 +1,13 @@
+# Artifacts
+build
+.next
+node_modules
+
+# Cache
+.cache
+.pnp
+yarn-error.log
+
+# Files
+package-lock.json
+pnpm-lock.yaml
