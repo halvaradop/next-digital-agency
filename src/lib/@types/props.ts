@@ -13,6 +13,7 @@ export interface ServiceListProps {
 export interface IconSquareProps {
     src: StaticImageData
     alt: string
+    className?: string
 }
 
 export interface ServiceIncludesProps {
