@@ -5,7 +5,7 @@ import { Checkbox } from "@halvaradop/ui-checkbox"
 
 export const Register = () => {
     return (
-        <form className="py-6 px-4 border-t border-x border-grey-600 space-y-6">
+        <form className="py-6 px-4 border-x border-grey-600 space-y-6">
             <Label className="p-4 text-white font-normal block rounded-lg border border-grey-600 bg-[#242424] bg-opacity-50">
                 Full Name
                 <Input

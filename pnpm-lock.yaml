@@ -14,6 +14,9 @@ importers:
       '@halvaradop/ui-checkbox':
         specifier: 0.1.0-beta.0
         version: 0.1.0-beta.0
+      '@halvaradop/ui-core':
+        specifier: 0.2.1-beta.0
+        version: 0.2.1-beta.0
       '@halvaradop/ui-input':
         specifier: 0.2.2-beta.0
         version: 0.2.2-beta.0
