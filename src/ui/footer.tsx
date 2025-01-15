@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { footer } from "@/lib/images"
-import { IconSquare } from "@/ui/services/icon"
+import { IconSquare } from "@/ui/icon"
 
 export const Footer = () => {
     const year = new Date().getFullYear()

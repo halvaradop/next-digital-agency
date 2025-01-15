@@ -5,3 +5,8 @@ export interface Service {
     src: StaticImageData
     alt: string
 }
+
+export interface ImageAttributes {
+    src: StaticImageData
+    alt: string
+}
