@@ -63,3 +63,10 @@ export interface CallToActionProps {
     description: string
     button: string
 }
+
+export interface ListProps<T extends object> {
+    items: T[]
+    render: (item: T) => React.ReactNode
+    className?: string
+    classNameItem?: string
+}

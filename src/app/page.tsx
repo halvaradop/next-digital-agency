@@ -1,12 +1,13 @@
-import { ProductList } from "@/ui/home/product-list"
-import { Button } from "@halvaradop/ui-button"
-import { frequentlyQuestions, homeChooseSquareUp, homeOurServices } from "@/lib/data"
-import { BrandCompanies } from "@/ui/home/brand-companies"
-import { OurClients } from "@/ui/home/our-clients"
+import { List } from "@/ui/list"
+import { Card } from "@/ui/card"
 import { Segment } from "@/ui/segment"
-import { FrequentlyQuestion } from "@/ui/home/frequently-question"
-import { CallToAction } from "@/ui/call-to-action"
 import { Register } from "@/ui/home/register"
+import { Button } from "@halvaradop/ui-button"
+import { ClientSays } from "@/ui/home/client-says"
+import { CallToAction } from "@/ui/call-to-action"
+import { BrandCompanies } from "@/ui/home/brand-companies"
+import { FrequentlyQuestion } from "@/ui/home/frequently-question"
+import { frequentlyQuestions, homeChooseSquareUp, homeOurClientSays, homeOurServices } from "@/lib/data"
 
 const Index = () => {
     return (
@@ -24,27 +25,37 @@ const Index = () => {
                 </div>
             </section>
             <BrandCompanies />
-            <ProductList
-                title={homeOurServices.title}
-                description={homeOurServices.description}
-                products={homeOurServices.products}
-            />
-            <ProductList
-                title={homeChooseSquareUp.title}
-                description={homeChooseSquareUp.description}
-                products={homeChooseSquareUp.products}
-            />
-            <OurClients />
+            <section>
+                <Segment
+                    title="Our Services"
+                    description="Transform your brand with our innovative digital solutions that captivate and engage your audience."
+                />
+                <List items={homeOurServices.products} render={(item) => <Card {...item} />} />
+            </section>
+            <section>
+                <Segment
+                    title="Why Choose SquareUp?"
+                    description="Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results."
+                />
+                <List items={homeChooseSquareUp.products} render={(item) => <Card {...item} />} />
+            </section>
+            <section className="border-t border-grey-600">
+                <Segment
+                    title="What our Clients say About us"
+                    description="At SquareUp, we take pride in delivering exceptional digital products and services that drive success for our clients. Here's what some of our satisfied clients have to say about their experience working with us"
+                />
+                <List items={homeOurClientSays} render={(item) => <ClientSays {...item} />} />
+            </section>
             <section className="border-t border-grey-600">
                 <Segment
                     title="Frequently Asked Questions"
                     description="Still you have any questions? Contact our Team via hello@squareup.com"
                 />
-                <section className="border-x border-grey-600">
-                    {frequentlyQuestions.map(({ index, title }, key) => (
-                        <FrequentlyQuestion key={key} index={index} title={title} />
-                    ))}
-                </section>
+                <List
+                    className="border-x border-grey-600"
+                    items={frequentlyQuestions}
+                    render={(item) => <FrequentlyQuestion {...item} />}
+                />
             </section>
             <CallToAction
                 title="Thank you for your Interest in SquareUp."

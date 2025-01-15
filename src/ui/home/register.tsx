@@ -1,8 +1,8 @@
 "use client"
 import { Input } from "@halvaradop/ui-input"
 import { Label } from "@halvaradop/ui-label"
-import { Checkbox } from "@halvaradop/ui-checkbox"
 import { Button } from "@halvaradop/ui-button"
+import { Checkbox } from "@halvaradop/ui-checkbox"
 
 export const Register = () => {
     return (
