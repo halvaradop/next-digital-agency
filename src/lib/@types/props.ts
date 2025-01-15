@@ -1,4 +1,4 @@
-import { ImageAttributes, Service } from "./types"
+import { Descriptive, ImageAttributes, Service } from "@/lib/@types/types"
 
 export interface LayoutProps {
     children: React.ReactNode
@@ -13,41 +13,16 @@ export interface IconSquareProps extends ImageAttributes {
     className?: string
 }
 
-export interface ServiceIncludesProps {
-    title: string
-    description: string
-    button: string
-    services: ServiceListProps[]
-}
-
-export interface ProductListProps {
-    title: string
-    description: string
-    products: ProductProps[]
-}
-
-export interface ProductProps extends ImageAttributes {
-    title: string
-    description: string
-    button?: string
-}
-
-export interface SegmentProps {
-    title: string
-    description: string
+export interface SegmentProps extends Descriptive {
     className?: string
 }
 
-export type CardProps = {
+export type CardProps = Descriptive & {
     className?: string
-    title: string
-    description: string
     button?: string
 } & (ImageAttributes | { src?: undefined; alt?: undefined })
 
-export interface ClientSaysProps {
-    title: string
-    description: string
+export interface ClientSaysProps extends Descriptive {
     avatar: ImageAttributes
     name: string
     job: string
@@ -58,9 +33,7 @@ export interface FrequentlyQuestionProps {
     title: string
 }
 
-export interface CallToActionProps {
-    title: string
-    description: string
+export interface CallToActionProps extends Descriptive {
     button: string
 }
 

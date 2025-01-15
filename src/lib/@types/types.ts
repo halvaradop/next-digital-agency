@@ -1,12 +1,15 @@
 import { StaticImageData } from "next/image"
 
-export interface Service {
-    title: string
+export interface ImageAttributes {
     src: StaticImageData
     alt: string
 }
 
-export interface ImageAttributes {
-    src: StaticImageData
-    alt: string
+export interface Service extends ImageAttributes {
+    title: string
+}
+
+export interface Descriptive {
+    title: string
+    description: string
 }

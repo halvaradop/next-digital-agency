@@ -1,5 +1,5 @@
 import { home, images, ourClients } from "@/lib/images"
-import { ClientSaysProps, FrequentlyQuestionProps, ProductListProps, ServiceListProps } from "@/lib/@types/props"
+import { ClientSaysProps, FrequentlyQuestionProps, ServiceListProps } from "@/lib/@types/props"
 
 export const design: ServiceListProps[] = [
     {
@@ -235,7 +235,7 @@ export const projectManagement: ServiceListProps[] = [
     },
 ]
 
-export const homeOurServices: ProductListProps = {
+export const homeOurServices = {
     title: "Our Services",
     description: "Transform your brand with our innovative digital solutions that captivate and engage your audience.",
     products: [
@@ -266,7 +266,7 @@ export const homeOurServices: ProductListProps = {
     ],
 }
 
-export const homeChooseSquareUp: ProductListProps = {
+export const homeChooseSquareUp = {
     title: "Why Choose SquareUp?",
     description:
         "Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results.",
