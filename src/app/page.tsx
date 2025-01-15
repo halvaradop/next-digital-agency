@@ -30,14 +30,14 @@ const Index = () => {
                     title="Our Services"
                     description="Transform your brand with our innovative digital solutions that captivate and engage your audience."
                 />
-                <List items={homeOurServices.products} render={(item) => <Card {...item} />} />
+                <List items={homeOurServices} render={(item) => <Card {...item} />} />
             </section>
             <section>
                 <Segment
                     title="Why Choose SquareUp?"
                     description="Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results."
                 />
-                <List items={homeChooseSquareUp.products} render={(item) => <Card {...item} />} />
+                <List items={homeChooseSquareUp} render={(item) => <Card {...item} />} />
             </section>
             <section className="border-t border-grey-600">
                 <Segment
