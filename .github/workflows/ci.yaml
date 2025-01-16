@@ -2,7 +2,7 @@ name: ci
 
 on:
   pull_request:
-    types: [opened, synchronize, closed]
+    types: [opened, synchronize]
 
 jobs:
   build:
@@ -16,11 +16,3 @@ jobs:
       - uses: pnpm/action-setup@v4
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
-
-  deploy-to-development:
-    if: github.event.pull_request.merged == true && github.base_ref == 'master'
-    runs-on: ubuntu-latest
-    needs: build
-    environment: development
-    steps:
-      - run: echo "Deploying to development"
