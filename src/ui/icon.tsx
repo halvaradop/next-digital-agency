@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { IconSquareProps } from "@/lib/@types/props"
 import { merge } from "@/lib/utils"
+import { IconSquareProps } from "@/lib/@types/props"
 
 export const IconSquare = ({ src, alt, className }: IconSquareProps) => {
     return (

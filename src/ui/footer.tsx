@@ -1,7 +1,8 @@
 import Link from "next/link"
 import Image from "next/image"
+import { Box } from "@/ui/box"
 import { footer } from "@/lib/images"
-import { IconSquare } from "@/ui/services/icon"
+import { IconSquare } from "@/ui/icon"
 
 export const Footer = () => {
     const year = new Date().getFullYear()
@@ -39,14 +40,19 @@ export const Footer = () => {
                     <Link href="/contacts">Contacts</Link>
                 </li>
             </ul>
-            <div className="py-4 px-3 flex flex-col border border-grey-600 rounded-lg base:w-fit base:p-0 base:items-center base:gap-0 base:order-1 base:border-none">
-                <h3 className="text-grey font-medium text-center base:text-white base:text-lg">Stay Connected</h3>
-                <figure className="mt-4 flex items-center justify-center gap-x-2 base:m-0">
-                    <IconSquare className="base:border-none base:bg-none" src={footer.facebook} alt="Facebook Icon" />
-                    <IconSquare className="base:border-none base:bg-none" src={footer.twitter} alt="Twitter Icon" />
-                    <IconSquare className="base:border-none base:bg-none" src={footer.linkedin} alt="Linkedin Icon" />
-                </figure>
-            </div>
+            <Box
+                className="py-4 px-3 flex flex-col rounded-lg base:w-fit base:p-0 base:items-center base:gap-0 base:order-1 base:border-none"
+                asChild
+            >
+                <div>
+                    <h3 className="text-grey font-medium text-center base:text-white base:text-lg">Stay Connected</h3>
+                    <figure className="mt-4 flex items-center justify-center gap-x-2 base:m-0">
+                        <IconSquare className="base:border-none base:bg-none" src={footer.facebook} alt="Facebook Icon" />
+                        <IconSquare className="base:border-none base:bg-none" src={footer.twitter} alt="Twitter Icon" />
+                        <IconSquare className="base:border-none base:bg-none" src={footer.linkedin} alt="Linkedin Icon" />
+                    </figure>
+                </div>
+            </Box>
             <ul className="text-grey-100 font-medium flex items-center flex-col base:justify-start base:self-start base:gap-y-5">
                 <li className="w-full hidden text-white text-lg font-semibold base:block">Contact Us</li>
                 <li className="w-full py-5 flex items-center justify-center gap-x-2 border-b border-grey-600 base:py-0 base:justify-start base:border-b-0">

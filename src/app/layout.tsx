@@ -1,7 +1,8 @@
 import { Barlow } from "next/font/google"
-import { LayoutProps } from "@/lib/@types/props"
+import { ChildrenProps } from "@/lib/@types/props"
 import { Header } from "@/ui/header"
 import { Footer } from "@/ui/footer"
+import { Box } from "@/ui/box"
 import "@/ui/globals.css"
 
 const barlow = Barlow({
@@ -10,14 +11,14 @@ const barlow = Barlow({
     variable: "--font-geist-sans",
 })
 
-export default function RootLayout({ children }: LayoutProps) {
+export default function RootLayout({ children }: ChildrenProps) {
     return (
         <html lang="en">
             <body
                 className={`${barlow.variable} min-h-dvh grid grid-rows-[auto_1fr_auto] antialiased bg-grey-700 scroll:w-2 track:my-2 thumb:rounded-full thumb:bg-grey-600`}
             >
                 <Header />
-                <main className="border-y border-grey-600">{children}</main>
+                <Box border="vertical">{children}</Box>
                 <Footer />
             </body>
         </html>

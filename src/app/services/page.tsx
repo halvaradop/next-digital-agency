@@ -1,46 +1,51 @@
-import Image from "next/image"
-import logoIcon from "@/assets/logo.svg"
-import { Button } from "@halvaradop/ui-button"
+import { Card } from "@/ui/card"
+import { List } from "@/ui/list"
+import { Segment } from "@/ui/segment"
+import { CallToAction } from "@/ui/call-to-action"
+import { ServiceList } from "@/ui/services/service-list"
 import { design, engineering, projectManagement } from "@/lib/data"
-import { ServiceDetails } from "@/ui/services/service-details"
 
 const ServicesPage = () => {
     return (
         <section className="w-11/12 mx-auto">
-            <div className="py-16 px-4 text-center border border-y-0 border-grey-600 sm:py-20 sm:px-5 md:py-24 md:px-6 base:py-28 base:px-7">
-                <h1 className="text-white text-3xl font-bold">Our Services</h1>
-                <p className="mt-4 text-grey">
-                    Transform your brand with our innovatie digital solutions that captive and engage your audience
-                </p>
-            </div>
-            <ServiceDetails
-                title={design.title}
-                description={design.description}
-                button={design.button}
-                services={design.services}
+            <Segment
+                className="border-x"
+                title="Our Services"
+                description="Transform your brand with our innovatie digital solutions that captive and engage your audience"
             />
-            <ServiceDetails
-                title={engineering.title}
-                description={engineering.description}
-                button={engineering.button}
-                services={engineering.services}
+            <section>
+                <Card
+                    className="border-t border-x border-grey-600"
+                    title="Design"
+                    description="At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences."
+                    button="Our design services include:"
+                />
+                <List items={design} render={(item) => <ServiceList {...item} />} />
+            </section>
+            <section>
+                <Card
+                    className="border-t border-x border-grey-600"
+                    title="Engineering"
+                    description="Our engineering team combines technical expertise with a passion for innovation to build robust and scalable digital solutions. We leverage the latest technologies and best practices to deliver high-performance applications tailored to your specific needs."
+                    button="Our engineering services include:"
+                />
+                <List items={engineering} render={(item) => <ServiceList {...item} />} />
+            </section>
+            <section>
+                <Card
+                    className="border-t border-x border-grey-600"
+                    title="Project Management"
+                    description="Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process."
+                    button="Our project management services include:"
+                />
+                <List items={projectManagement} render={(item) => <ServiceList {...item} />} />
+            </section>
+            <CallToAction
+                className="border-b-0"
+                title="Let us Bring your Ideas to Life in the Digital World."
+                description="No matter which services you choose, we are committed to delivering exceptional results that exceed your expectations. Our multidisciplinary team works closely together to ensure seamless collaboration and a unified vision for your digital product."
+                button="Start Project"
             />
-            <ServiceDetails
-                title={projectManagement.title}
-                description={projectManagement.description}
-                button={projectManagement.button}
-                services={projectManagement.services}
-            />
-            <div className="py-16 px-[5%] text-center flex items-center flex-col gap-y-4 border border-b-0 border-grey-600 sm:py-20 md:py-24 base:py-28">
-                <Image src={logoIcon} alt="SquareUp Icon" />
-                <h3 className="text-white text-2xl font-semibold">Let us Bring your Ideas to Life in the Digital World.</h3>
-                <p className="text-grey text-sm">
-                    No matter which services you choose, we are committed to delivering exceptional results that exceed your
-                    expectations. Our multidisciplinary team works closely together to ensure seamless collaboration and a unified
-                    vision for your digital product.
-                </p>
-                <Button className="text-black border-green-700 bg-green-700">Start Project</Button>
-            </div>
         </section>
     )
 }

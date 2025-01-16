@@ -11,6 +11,18 @@ importers:
       '@halvaradop/ui-button':
         specifier: 0.3.2-beta.0
         version: 0.3.2-beta.0
+      '@halvaradop/ui-checkbox':
+        specifier: 0.1.0-beta.0
+        version: 0.1.0-beta.0
+      '@halvaradop/ui-core':
+        specifier: 0.2.1-beta.0
+        version: 0.2.1-beta.0
+      '@halvaradop/ui-input':
+        specifier: 0.2.2-beta.0
+        version: 0.2.2-beta.0
+      '@halvaradop/ui-label':
+        specifier: 0.1.2-beta.0
+        version: 0.1.2-beta.0
       next:
         specifier: 15.1.4
         version: 15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -67,8 +79,20 @@ packages:
   '@halvaradop/ui-button@0.3.2-beta.0':
     resolution: {integrity: sha512-qNLD3fNSd2sj6xNHFrtFCPZLq6E+iMA7HdntI7zqQAmwRH0t9/N+G4SH31ckghFA+OeZBoNDe90JNDe9Edxq6Q==}
 
+  '@halvaradop/ui-checkbox@0.1.0-beta.0':
+    resolution: {integrity: sha512-mcHKRKssxfjx3QJ3rOWGF3sgm3pX/gOyNWvqUw7jdK5XLkhA6k0QpT0QgZ9osfwi90ozFCItPKBD/FjpERIj3A==}
+
+  '@halvaradop/ui-core@0.2.1':
+    resolution: {integrity: sha512-AblOzPb7d7K0+iEQPf6Ti1yF4dY2XGP/03ZAQQNHOkUZlZD4IYdSQ1/U5z5ffJKiKPBGLXNiE4nPRUhYVD4QPw==}
+
   '@halvaradop/ui-core@0.2.1-beta.0':
     resolution: {integrity: sha512-FWbmE91CBWWEl1x73nSRckrEyIaXwx+lqJwCPCjRuRb9dtHEHjg/kB43ZNyGtsyqY7kZwSPRsx6oBj50kyL8Sg==}
+
+  '@halvaradop/ui-input@0.2.2-beta.0':
+    resolution: {integrity: sha512-CZNB2Ekr/x5XwpuWtxePAxeb3we6yl8lM6kkljDCZcnxejWrKiRZdZNQ3hdohk44BdXwO1jNlBjtJMs9kHdX9Q==}
+
+  '@halvaradop/ui-label@0.1.2-beta.0':
+    resolution: {integrity: sha512-N+vy9PXFBrZssOe8BRZBNMaBMetpZl0I9FVsYxFCHb6J9rtbusqXHnToTFHjc7OKF8BpLZWy6TGaHCzZpggxYA==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -795,9 +819,26 @@ snapshots:
       '@halvaradop/ui-core': 0.2.1-beta.0
       class-variance-authority: 0.7.0
 
+  '@halvaradop/ui-checkbox@0.1.0-beta.0':
+    dependencies:
+      '@halvaradop/ui-core': 0.2.1
+      class-variance-authority: 0.7.0
+
+  '@halvaradop/ui-core@0.2.1': {}
+
   '@halvaradop/ui-core@0.2.1-beta.0':
     dependencies:
       tailwind-merge: 2.6.0
+
+  '@halvaradop/ui-input@0.2.2-beta.0':
+    dependencies:
+      '@halvaradop/ui-core': 0.2.1-beta.0
+      class-variance-authority: 0.7.0
+
+  '@halvaradop/ui-label@0.1.2-beta.0':
+    dependencies:
+      '@halvaradop/ui-core': 0.2.1-beta.0
+      class-variance-authority: 0.7.0
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:

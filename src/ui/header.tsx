@@ -1,5 +1,5 @@
 import Image from "next/image"
-import logoIcon from "@/assets/logo.svg"
+import logoIcon from "@/assets/services/logo.svg"
 
 export const Header = () => {
     return (
