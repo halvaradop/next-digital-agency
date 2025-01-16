@@ -18,8 +18,11 @@ jobs:
         with:
           node-version: "18.x"
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Install Vercel CLI
-        run: npm install -g vercel@latest
+        run: pnpm install -g vercel@latest
 
       - name: Pull Vercel Environment Variables
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
