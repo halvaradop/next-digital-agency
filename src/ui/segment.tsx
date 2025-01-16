@@ -5,7 +5,7 @@ export const Segment = ({ className, title, description }: SegmentProps) => {
     return (
         <div
             className={merge(
-                "py-16 px-4 text-center border-grey-600 sm:py-20 sm:px-5 md:py-24 md:px-6 base:py-28 base:px-7",
+                "py-16 px-4 text-center border-grey-600 bg-segment bg-no-repeat bg-cover bg-center sm:py-20 sm:px-5 md:py-24 md:px-6 base:py-28 base:px-7",
                 className,
             )}
         >

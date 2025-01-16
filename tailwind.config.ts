@@ -36,6 +36,13 @@ export default {
                     700: "#9EFF00",
                 },
             },
+            backgroundImage: {
+                segment: "url(/assets/icons/segment.svg)",
+                hero: "url(/assets/icons/abstract-design.svg)",
+            },
+            backgroundPosition: {
+                hero: "center bottom",
+            },
         },
         nth: {
             1: "1",
@@ -48,6 +55,7 @@ export default {
         utilities,
         plugin(({ matchVariant, theme }) => {
             matchVariant("nth", (value) => `&:nth-child(${value})`, { values: theme("nth") })
+            matchVariant("nth-last", (value) => `&:nth-last-child(${value})`, { values: theme("nth") })
         }),
     ],
 } satisfies Config

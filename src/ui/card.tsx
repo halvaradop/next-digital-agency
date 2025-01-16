@@ -5,7 +5,7 @@ import { CardProps } from "@/lib/@types/props"
 
 export const Card = ({ className, title, description, button, src, alt }: CardProps) => {
     return (
-        <article className={merge("py-10 px-4 sm:py-11 sm:px-5 md:py-12 md:px-6 base:py-14 base:px-7", className)}>
+        <article className={merge("py-10 px-4 sm:py-11 sm:px-5 md:py-12 md:px-6 base:px-7", className)}>
             {src && alt && (
                 <figure className="flex items-center gap-x-5">
                     <IconSquare src={src} alt={alt} />
