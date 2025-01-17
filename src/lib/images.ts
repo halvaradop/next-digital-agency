@@ -65,6 +65,11 @@ import lauraAdams from "@/assets/home/laura-adams.svg"
 import michaelAnderson from "@/assets/home/michael-aderson.svg"
 import emilyTurner from "@/assets/home/emily-turner.svg"
 
+import chicBoutique from "@/assets/works/boutique.svg"
+import hungryBites from "@/assets/works/hungry-bites.svg"
+import eventMasters from "@/assets/works/event-master.svg"
+import proTech from "@/assets/works/pro-tech.svg"
+
 export const images = {
     appPrototyping,
     appTesting,
@@ -140,4 +145,11 @@ export const ourClients = {
     lauraAdams,
     michaelAnderson,
     emilyTurner,
+}
+
+export const works = {
+    chicBoutique,
+    hungryBites,
+    eventMasters,
+    proTech,
 }
