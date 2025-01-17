@@ -54,3 +54,8 @@ export type BoxProps = ClassNameProps &
     SlotProps<"section"> & {
         border?: "vertical" | "horizontal" | "both" | "none"
     }
+
+export interface WorkProps extends Descriptive, ClassNameProps {
+    image: ImageAttributes
+    link: string
+}

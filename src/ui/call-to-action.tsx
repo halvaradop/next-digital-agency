@@ -10,7 +10,7 @@ export const CallToAction = ({ className, border, title, description, button }: 
         <Box
             border={border}
             className={merge(
-                "py-16 px-[5%] text-center flex items-center flex-col gap-y-4 sm:py-20 md:py-24 base:py-28",
+                "py-16 px-[5%] text-center flex items-center flex-col bg-segment bg-no-repeat bg-top gap-y-4 sm:py-20 md:py-24 base:py-28",
                 className,
             )}
             asChild
