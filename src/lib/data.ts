@@ -1,5 +1,5 @@
 import { home, images, ourClients, works } from "@/lib/images"
-import { ClientSaysProps, FrequentlyQuestionProps, ProcessProps, ServiceListProps, WorkProps } from "@/lib/@types/props"
+import { ClientSaysProps, FrequentlyQuestionProps, CardIndexProps, ServiceListProps, WorkProps } from "@/lib/@types/props"
 
 export const design: ServiceListProps[] = [
     {
@@ -436,7 +436,7 @@ export const workList: { title: string; work: WorkProps }[] = [
     },
 ]
 
-export const processList: ProcessProps[] = [
+export const processList: CardIndexProps[] = [
     {
         index: 1,
         title: "Discovery",
@@ -484,5 +484,44 @@ export const processList: ProcessProps[] = [
         title: "Continuous Improvement",
         description:
             "We believe in continuous improvement and strive to optimize your digital product even after launch. We monitor user feedback, analytics, and market trends to identify opportunities for enhancement and growth. We proactively suggest improvements and updates to keep your digital product ahead of the curve.",
+    },
+]
+
+export const aboutList: CardIndexProps[] = [
+    {
+        index: 1,
+        title: "Design",
+        description:
+            "Once upon a time, in a world driven by technology, a group of talented designers came together with a shared vision. They believed that design could shape the way people interacted with digital products. With their passion for aesthetics and usability, they founded SquareUp Digital Product Agency's design department. Their mission was to create visually stunning and user-friendly interfaces that would leave a lasting impression.",
+    },
+    {
+        index: 2,
+        title: "Engineering",
+        description:
+            "Meanwhile, a team of brilliant engineers was busy crafting the backbone of digital innovation. With their expertise in coding and development, they founded the engineering division of SquareUp. They believed that technology had the power to transform ideas into reality. Their mission was to build robust, scalable, and cutting-edge digital solutions that would push the boundaries of what was possible.",
+    },
+    {
+        index: 3,
+        title: "Project Management",
+        description:
+            "In the midst of the creative and technical minds, a group of project managers emerged as the glue that held everything together. They understood the importance of effective communication, organization, and efficient execution. With their skills in planning and coordination, they founded SquareUp's project management team. Their mission was to ensure that every project ran smoothly, on time, and within budget.",
+    },
+    {
+        index: 4,
+        title: "Collaboration",
+        description:
+            "At SquareUp, these three departments came together to form a cohesive and collaborative unit. They embraced the power of collaboration and recognized that their combined expertise would result in truly exceptional digital products. They believed that by working closely with their clients, understanding their needs, and involving them in the creative process, they could deliver solutions that surpassed expectations.",
+    },
+    {
+        index: 5,
+        title: "Client-Centric Approach",
+        description:
+            "SquareUp's success was not solely measured by their technical prowess or design skills but by their unwavering commitment to their clients. They placed their clients at the center of everything they did. They took the time to listen, understand their unique challenges, and tailor their services to meet their specific requirements. Their mission was to become trusted partners, guiding businesses on their digital journey.",
+    },
+    {
+        index: 6,
+        title: "Driving Success",
+        description:
+            "With each project, SquareUp's reputation grew. Their portfolio expanded to include a diverse range of industries and their impact was felt far and wide. From startups to established enterprises, businesses sought out SquareUp for their expertise in creating digital products that delivered tangible results. SquareUp's success was driven by their passion for innovation, their dedication to quality, and their commitment to helping their clients succeed in the digital world.",
     },
 ]

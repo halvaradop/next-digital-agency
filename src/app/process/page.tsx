@@ -3,8 +3,8 @@ import { Card } from "@/ui/card"
 import { List } from "@/ui/list"
 import { Segment } from "@/ui/segment"
 import { processList } from "@/lib/data"
+import { CardIndex } from "@/ui/card-index"
 import { Register } from "@/ui/home/register"
-import { Process } from "@/ui/process/process"
 import { CallToAction } from "@/ui/call-to-action"
 
 const ProcessPage = () => {
@@ -24,7 +24,7 @@ const ProcessPage = () => {
                 className="base:grid base:grid-cols-2"
                 classNameItem="border-b border-grey-600 base:odd:border-r"
                 items={processList}
-                render={(item) => <Process {...item} />}
+                render={(item) => <CardIndex {...item} />}
             />
             <CallToAction
                 border="none"
