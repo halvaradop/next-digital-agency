@@ -59,3 +59,7 @@ export interface WorkProps extends Descriptive, ClassNameProps {
     image: ImageAttributes
     link: string
 }
+
+export interface ProcessProps extends Descriptive, ClassNameProps {
+    index: number
+}
