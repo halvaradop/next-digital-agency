@@ -60,6 +60,6 @@ export interface WorkProps extends Descriptive, ClassNameProps {
     link: string
 }
 
-export interface ProcessProps extends Descriptive, ClassNameProps {
+export interface CardIndexProps extends Descriptive, ClassNameProps {
     index: number
 }
