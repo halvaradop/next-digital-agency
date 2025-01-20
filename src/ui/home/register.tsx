@@ -1,12 +1,19 @@
+import { merge } from "@halvaradop/ui-core"
 import { Input } from "@halvaradop/ui-input"
 import { Label } from "@halvaradop/ui-label"
 import { Button } from "@halvaradop/ui-button"
 import { Checkbox } from "@halvaradop/ui-checkbox"
+import { RegisterProps } from "@/lib/@types/props"
 
-export const Register = () => {
+export const Register = ({ className, classNameForm }: RegisterProps) => {
     return (
-        <section className="base:border-x base:border-grey-600">
-            <form className="py-6 px-4 border-x border-grey-600 space-y-6 sm:mx-auto md:max-w-screen-md base:py-10 base:px-8 base:grid base:grid-cols-2 base:gap-5 base:space-y-0 lg:py-14 lg:px-10">
+        <section className={merge("base:border-x base:border-grey-600", className)}>
+            <form
+                className={merge(
+                    "py-6 px-4 border-x border-grey-600 space-y-6 sm:mx-auto md:max-w-screen-md base:py-10 base:px-8 base:grid base:grid-cols-2 base:gap-5 base:space-y-0 lg:py-14 lg:px-10",
+                    classNameForm,
+                )}
+            >
                 <Label className="p-4 text-white font-normal block rounded-lg border border-grey-600 bg-[#242424] bg-opacity-50">
                     Full Name
                     <Input
