@@ -65,3 +65,7 @@ export interface CardIndexProps extends Descriptive, ClassNameProps {
     index?: number
     classNameTitle?: string
 }
+
+export interface RegisterProps extends ClassNameProps {
+    classNameForm?: string
+}

@@ -1,10 +1,12 @@
 import Image from "next/image"
+import { merge } from "@halvaradop/ui-core"
 import { Button } from "@halvaradop/ui-button"
+import { ClassNameProps } from "@/lib/@types/props"
 import logoIcon from "@/assets/services/logo.svg"
 
-export const CallToActionStartProject = () => {
+export const CallToActionStartProject = ({ className }: ClassNameProps) => {
     return (
-        <section className="py-10 px-4 text-grey-100 text-center sm:py-11 sm:px-5 md:py-12 md:px-6 base:px-7">
+        <section className={merge("py-10 px-4 text-grey-100 text-center sm:py-11 sm:px-5 md:py-12 md:px-6 base:px-7", className)}>
             <div className="base:flex base:items-center base:gap-x-5">
                 <Image className="size-16 mx-auto base:justify-self-start" src={logoIcon} alt="SquareUp Logo Icon" />
                 <div className="base:text-left">
