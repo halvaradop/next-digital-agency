@@ -1,3 +1,9 @@
+/**
+ * @deprecated
+ * TODO:
+ *  - Separate the data from the pages
+ *  - Delete this file
+ */
 import { home, images, ourClients, works } from "@/lib/images"
 import { ClientSaysProps, FrequentlyQuestionProps, CardIndexProps, ServiceListProps, WorkProps } from "@/lib/@types/props"
 

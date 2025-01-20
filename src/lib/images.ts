@@ -70,6 +70,9 @@ import hungryBites from "@/assets/works/hungry-bites.svg"
 import eventMasters from "@/assets/works/event-master.svg"
 import proTech from "@/assets/works/pro-tech.svg"
 
+import designHead from "@/assets/careers/design-head.svg"
+import hrManager from "@/assets/careers/hr-manager.svg"
+
 export const images = {
     appPrototyping,
     appTesting,
