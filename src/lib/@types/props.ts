@@ -25,6 +25,7 @@ export interface SegmentProps extends Descriptive, ClassNameProps {}
 export type CardProps = Descriptive &
     ClassNameProps & {
         button?: string
+        classNameButton?: string
     } & (ImageAttributes | { src?: undefined; alt?: undefined })
 
 export interface ClientSaysProps extends Descriptive {
@@ -61,5 +62,6 @@ export interface WorkProps extends Descriptive, ClassNameProps {
 }
 
 export interface CardIndexProps extends Descriptive, ClassNameProps {
-    index: number
+    index?: number
+    classNameTitle?: string
 }
