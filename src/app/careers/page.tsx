@@ -77,12 +77,12 @@ const Careers = () => {
             </section>
             <section>
                 <h2 className="py-8 text-grey-100 text-xl font-semibold text-center border-b border-grey-600 sm:py-10 md:py-11 base:py-12 base:pl-7 base:text-left">
-                    Development Job Openings
+                    QA Job Openings
                 </h2>
                 <List
                     className="lg:grid lg:grid-cols-3"
                     classNameItem="border-b border-grey-600 lg:border-r lg:last:border-r-0"
-                    items={careersDevelopmentJob}
+                    items={careersQaJob}
                     render={(item) => (
                         <Card className="h-full lg:flex lg:flex-col lg:gap-y-5" classNameButton="w-full lg:mt-auto" {...item} />
                     )}
