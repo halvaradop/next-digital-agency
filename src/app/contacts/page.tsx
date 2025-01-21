@@ -1,10 +1,10 @@
-import { Box } from "@/ui/box"
-import { List } from "@/ui/list"
-import { Segment } from "@/ui/segment"
+import { Box } from "@/ui/common/box"
+import { List } from "@/ui/common/list"
+import { Segment } from "@/ui/common/segment"
 import { Register } from "@/ui/home/register"
+import { frequentlyQuestions } from "@/lib/content/common"
 import { FrequentlyQuestion } from "@/ui/home/frequently-question"
-import { CallToActionStartProject } from "@/ui/call-to-action-start-project"
-import { frequentlyQuestions } from "@/lib/content/contacts"
+import { CallToActionStartProject } from "@/ui/common/call-to-action-start-project"
 
 const ContactsPage = () => {
     return (

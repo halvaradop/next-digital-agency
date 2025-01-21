@@ -2,7 +2,7 @@ import { Barlow } from "next/font/google"
 import { ChildrenProps } from "@/lib/@types/props"
 import { Header } from "@/ui/header"
 import { Footer } from "@/ui/footer"
-import { Box } from "@/ui/box"
+import { Box } from "@/ui/common/box"
 import "@/ui/globals.css"
 
 const barlow = Barlow({

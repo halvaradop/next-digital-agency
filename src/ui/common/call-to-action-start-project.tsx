@@ -2,7 +2,7 @@ import Image from "next/image"
 import { merge } from "@halvaradop/ui-core"
 import { Button } from "@halvaradop/ui-button"
 import { ClassNameProps } from "@/lib/@types/props"
-import logoIcon from "@/assets/services/logo.svg"
+import logoIcon from "@/assets/icons/common/logo.svg"
 
 export const CallToActionStartProject = ({ className }: ClassNameProps) => {
     return (

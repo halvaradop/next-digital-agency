@@ -1,9 +1,9 @@
 import Image from "next/image"
-import { Box } from "@/ui/box"
+import { Box } from "@/ui/common/box"
 import { merge } from "@halvaradop/ui-core"
 import { Button } from "@halvaradop/ui-button"
 import { CallToActionProps } from "@/lib/@types/props"
-import logoIcon from "@/assets/services/logo.svg"
+import logoIcon from "@/assets/icons/common/logo.svg"
 
 export const CallToAction = ({ className, border, title, description, button }: CallToActionProps) => {
     return (

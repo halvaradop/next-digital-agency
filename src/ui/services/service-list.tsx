@@ -1,6 +1,6 @@
-import { IconSquare } from "@/ui/icon"
+import { List } from "@/ui/common/list"
+import { IconSquare } from "@/ui/common/icon"
 import { ServiceListProps } from "@/lib/@types/props"
-import { List } from "@/ui/list"
 
 export const ServiceList = ({ title, services }: ServiceListProps) => {
     return (

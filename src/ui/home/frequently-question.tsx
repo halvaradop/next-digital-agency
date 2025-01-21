@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { FrequentlyQuestionProps } from "@/lib/@types/props"
-import crossIcon from "@/assets/home/cross.svg"
+import crossIcon from "@/assets/icons/home/cross.svg"
 
 export const FrequentlyQuestion = ({ index, title }: FrequentlyQuestionProps) => {
     return (

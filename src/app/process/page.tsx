@@ -1,11 +1,11 @@
-import { Box } from "@/ui/box"
-import { Card } from "@/ui/card"
-import { List } from "@/ui/list"
-import { Segment } from "@/ui/segment"
-import { processList } from "@/lib/data"
-import { CardIndex } from "@/ui/card-index"
+import { Box } from "@/ui/common/box"
+import { Card } from "@/ui/common/card"
+import { List } from "@/ui/common/list"
 import { Register } from "@/ui/home/register"
-import { CallToAction } from "@/ui/call-to-action"
+import { Segment } from "@/ui/common/segment"
+import { CardIndex } from "@/ui/common/card-index"
+import { CallToAction } from "@/ui/common/call-to-action"
+import { processList } from "@/lib/content/process"
 
 const ProcessPage = () => {
     return (

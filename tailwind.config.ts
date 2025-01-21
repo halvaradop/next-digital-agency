@@ -37,8 +37,8 @@ export default {
                 },
             },
             backgroundImage: {
-                segment: "url(/assets/icons/segment.svg)",
-                hero: "url(/assets/icons/abstract-design.svg)",
+                segment: "url(/assets/images/segment.svg)",
+                hero: "url(/assets/images/abstract-design.svg)",
             },
             backgroundPosition: {
                 hero: "center bottom",
