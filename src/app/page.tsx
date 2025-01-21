@@ -1,14 +1,15 @@
-import { Box } from "@/ui/box"
-import { List } from "@/ui/list"
-import { Card } from "@/ui/card"
-import { Segment } from "@/ui/segment"
+import { Box } from "@/ui/common/box"
+import { List } from "@/ui/common/list"
+import { Card } from "@/ui/common/card"
+import { Segment } from "@/ui/common/segment"
 import { Register } from "@/ui/home/register"
 import { Button } from "@halvaradop/ui-button"
 import { ClientSays } from "@/ui/home/client-says"
-import { CallToAction } from "@/ui/call-to-action"
+import { CallToAction } from "@/ui/common/call-to-action"
 import { BrandCompanies } from "@/ui/home/brand-companies"
 import { FrequentlyQuestion } from "@/ui/home/frequently-question"
-import { frequentlyQuestions, homeChooseSquareUp, homeOurClientSays, homeOurServices } from "@/lib/data"
+import { frequentlyQuestions } from "@/lib/content/common"
+import { homeChooseSquareUp, homeOurClientSays, homeOurServices } from "@/lib/content/home"
 
 const Index = () => {
     return (

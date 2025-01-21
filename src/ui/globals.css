@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer utilities {
     .service-item {
         @apply border-grey-600 first:border-b first:border-r nth-2:border-b nth-3:border-r sm:border-r sm:last:border-r-0 sm:first:border-b-0 sm:nth-2:border-b-0;
     }
-}
 
-@layer utilities {
     .bg-gradient-service {
         border: 1px solid #2e2e2e;
         background: linear-gradient(229deg, rgba(158, 255, 0, 0.2) -68.25%, rgba(158, 255, 0, 0) 32.16%),

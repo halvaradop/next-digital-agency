@@ -1,9 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
+import { merge } from "@halvaradop/ui-core"
 import { WorkProps } from "@/lib/@types/props"
 import { Button } from "@halvaradop/ui-button"
-import { merge } from "@halvaradop/ui-core"
-import arrow from "@/assets/icons/arrow.svg"
+import arrow from "@/assets/icons/general/arrow.svg"
 
 export const Work = ({ className, title, description, link, image }: WorkProps) => {
     return (

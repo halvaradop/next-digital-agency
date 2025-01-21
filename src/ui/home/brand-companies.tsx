@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Box } from "@/ui/box"
-import { companies } from "@/lib/images"
+import { Box } from "@/ui/common/box"
+import { companies } from "@/lib/content/home"
 
 export const BrandCompanies = () => {
     return (

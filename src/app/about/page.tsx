@@ -1,14 +1,12 @@
 import Image from "next/image"
-import { Box } from "@/ui/box"
-import { Card } from "@/ui/card"
-import { List } from "@/ui/list"
-import { aboutList } from "@/lib/data"
-import { Segment } from "@/ui/segment"
-import { CardIndex } from "@/ui/card-index"
-import aboutImage from "@/assets/about/about.svg"
-import logoIcon from "@/assets/services/logo.svg"
-import { Button } from "@halvaradop/ui-button"
-import { CallToActionStartProject } from "@/ui/call-to-action-start-project"
+import { Box } from "@/ui/common/box"
+import { Card } from "@/ui/common/card"
+import { List } from "@/ui/common/list"
+import { Segment } from "@/ui/common/segment"
+import { CardIndex } from "@/ui/common/card-index"
+import { CallToActionStartProject } from "@/ui/common/call-to-action-start-project"
+import { aboutList } from "@/lib/content/about"
+import aboutImage from "@/assets/icons/about/about.svg"
 
 const About = () => {
     return (

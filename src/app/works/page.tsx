@@ -1,10 +1,10 @@
-import { Box } from "@/ui/box"
-import { Card } from "@/ui/card"
-import { List } from "@/ui/list"
+import { Box } from "@/ui/common/box"
+import { Card } from "@/ui/common/card"
+import { List } from "@/ui/common/list"
 import { Work } from "@/ui/works/work"
-import { Segment } from "@/ui/segment"
+import { Segment } from "@/ui/common/segment"
 import { workList } from "@/lib/data"
-import { CallToAction } from "@/ui/call-to-action"
+import { CallToAction } from "@/ui/common/call-to-action"
 
 const WorksPage = () => {
     return (

@@ -1,9 +1,9 @@
-import { Card } from "@/ui/card"
-import { List } from "@/ui/list"
-import { Segment } from "@/ui/segment"
-import { CallToAction } from "@/ui/call-to-action"
+import { Card } from "@/ui/common/card"
+import { List } from "@/ui/common/list"
+import { Segment } from "@/ui/common/segment"
 import { ServiceList } from "@/ui/services/service-list"
-import { design, engineering, projectManagement } from "@/lib/data"
+import { CallToAction } from "@/ui/common/call-to-action"
+import { design, engineering, projectManagement } from "@/lib/content/services"
 
 const ServicesPage = () => {
     return (

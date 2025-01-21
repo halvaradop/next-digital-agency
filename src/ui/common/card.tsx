@@ -1,5 +1,5 @@
 import { merge } from "@/lib/utils"
-import { IconSquare } from "@/ui/icon"
+import { IconSquare } from "@/ui/common/icon"
 import { Button } from "@halvaradop/ui-button"
 import { CardProps } from "@/lib/@types/props"
 

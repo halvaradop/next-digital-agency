@@ -1,5 +1,5 @@
-import { CardIndexProps } from "@/lib/@types/props"
 import { merge } from "@halvaradop/ui-core"
+import { CardIndexProps } from "@/lib/@types/props"
 
 export const CardIndex = ({ className, classNameTitle, title, description, index }: CardIndexProps) => {
     return (

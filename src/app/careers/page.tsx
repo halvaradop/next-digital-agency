@@ -1,8 +1,8 @@
-import { Box } from "@/ui/box"
-import { Card } from "@/ui/card"
-import { List } from "@/ui/list"
-import { Segment } from "@/ui/segment"
-import { CardIndex } from "@/ui/card-index"
+import { Box } from "@/ui/common/box"
+import { Card } from "@/ui/common/card"
+import { List } from "@/ui/common/list"
+import { Segment } from "@/ui/common/segment"
+import { CardIndex } from "@/ui/common/card-index"
 import {
     careersDesignJob,
     careersDevelopmentJob,
@@ -10,7 +10,7 @@ import {
     careersQaJob,
     careersWelcome,
 } from "@/lib/content/careers"
-import { CallToActionStartProject } from "@/ui/call-to-action-start-project"
+import { CallToActionStartProject } from "@/ui/common/call-to-action-start-project"
 
 const Careers = () => {
     return (
