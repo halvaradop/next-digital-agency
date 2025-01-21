@@ -22,12 +22,17 @@ export const metadata: Metadata = {
     },
     description,
     applicationName: title,
-    authors: { name: "Hernan Alvarado <hernanvid123@gmail.com>" },
+    authors: {
+        name: "Hernan Alvarado <hernanvid123@gmail.com>",
+        url: "https://github.com/halvaradop",
+    },
     category: "website",
     classification: "website",
     creator: "Hernan Alvarado",
     keywords: ["SquareUp", "Digital Agency", "Produce UI", "Praha", "Figma Design", "Figma Template", "Nextjs", "Tailwindcss"],
     robots: "index, follow",
+    metadataBase: new URL("https://next-digital-agency-five.vercel.app/"),
+    publisher: "Vercel",
     openGraph: {
         title,
         description,
