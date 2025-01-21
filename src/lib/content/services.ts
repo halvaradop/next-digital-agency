@@ -36,7 +36,7 @@ import testPlanning from "@/assets/icons/services/test-planning.svg"
 import thirdParty from "@/assets/icons/services/third-party.svg"
 import typography from "@/assets/icons/services/typography.svg"
 import uiDesign from "@/assets/icons/services/ui-design.svg"
-import userResearch from "@/assets/services/user-research.svg"
+import userResearch from "@/assets/icons/services/user-research.svg"
 
 export const images = {
     appPrototyping,
