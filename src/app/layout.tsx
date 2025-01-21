@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import { Barlow } from "next/font/google"
 import { ChildrenProps } from "@/lib/@types/props"
 import { Header } from "@/ui/header"
@@ -10,6 +11,36 @@ const barlow = Barlow({
     subsets: ["latin"],
     variable: "--font-geist-sans",
 })
+
+const title = "SquareUp Digital Agency"
+const description = "SquareUp is the key to creating a professional and impactful online presence for your agency"
+
+export const metadata: Metadata = {
+    title: {
+        default: title,
+        template: "%s | Digital Agency",
+    },
+    description,
+    applicationName: title,
+    authors: { name: "Hernan Alvarado <hernanvid123@gmail.com>" },
+    category: "website",
+    classification: "website",
+    creator: "Hernan Alvarado",
+    keywords: ["SquareUp", "Digital Agency", "Produce UI", "Praha", "Figma Design", "Figma Template", "Nextjs", "Tailwindcss"],
+    robots: "index, follow",
+    openGraph: {
+        title,
+        description,
+        type: "website",
+        locale: "en_US",
+        siteName: title,
+    },
+    twitter: {
+        card: "summary_large_image",
+        title,
+        description,
+    },
+}
 
 export default function RootLayout({ children }: ChildrenProps) {
     return (

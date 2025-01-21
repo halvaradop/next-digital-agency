@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import { Box } from "@/ui/common/box"
 import { Card } from "@/ui/common/card"
 import { List } from "@/ui/common/list"
@@ -7,13 +8,17 @@ import { CardIndex } from "@/ui/common/card-index"
 import { CallToAction } from "@/ui/common/call-to-action"
 import { processList } from "@/lib/content/process"
 
+const description = "At SquareUp, we value transparency, collaboration, and delivering exceptional results."
+
+export const metadata: Metadata = {
+    title: "Process",
+    description,
+}
+
 const ProcessPage = () => {
     return (
         <Box className="w-11/12 mx-auto" border="horizontal">
-            <Segment
-                title="Process of Starting the Project"
-                description="At SquareUp, we value transparency, collaboration, and delivering exceptional results."
-            />
+            <Segment title="Process of Starting the Project" description={description} />
             <Card
                 className="border-b border-grey-600"
                 title="At SquareUp"
