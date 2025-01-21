@@ -10,6 +10,7 @@ import {
     careersQaJob,
     careersWelcome,
 } from "@/lib/content/careers"
+import { SegmentTitle } from "@/ui/common/segment-title"
 import { CallToActionStartProject } from "@/ui/common/call-to-action-start-project"
 
 const Careers = () => {
@@ -29,7 +30,7 @@ const Careers = () => {
                 className="base:grid base:grid-cols-2"
                 classNameItem="pl-0 border-b border-grey-600 base:odd:border-r"
                 items={careersWelcome}
-                render={(item) => <CardIndex classNameTitle="pl-0" {...item} />}
+                render={({ title, description }) => <CardIndex classNameTitle="pl-0" title={title} description={description} />}
             />
             <Card
                 className="border-b border-grey-600"
@@ -37,9 +38,7 @@ const Careers = () => {
                 description="We are always on the lookout for talented individuals who are passionate about creating exceptional digital experiences. Whether you're a designer, engineer, project manager, or have skills that align with our agency's mission, we encourage you to explore our open positions."
             />
             <section>
-                <h2 className="py-8 text-grey-100 text-xl font-semibold text-center border-b border-grey-600 sm:py-10 md:py-11 base:py-12 base:pl-7 base:text-left">
-                    Design Job Openings
-                </h2>
+                <SegmentTitle className="text-grey-100 text-xl base:text-left">Design Job Openings</SegmentTitle>
                 <List
                     className="lg:grid lg:grid-cols-3"
                     classNameItem="border-b border-grey-600 lg:border-r lg:last:border-r-0"
@@ -50,9 +49,7 @@ const Careers = () => {
                 />
             </section>
             <section>
-                <h2 className="py-8 text-grey-100 text-xl font-semibold text-center border-b border-grey-600 sm:py-10 md:py-11 base:py-12 base:pl-7 base:text-left">
-                    Development Job Openings
-                </h2>
+                <SegmentTitle className="text-grey-100 text-xl base:text-left">Development Job Openings</SegmentTitle>
                 <List
                     className="lg:grid lg:grid-cols-3"
                     classNameItem="border-b border-grey-600 lg:border-r lg:last:border-r-0"
@@ -63,9 +60,7 @@ const Careers = () => {
                 />
             </section>
             <section>
-                <h2 className="py-8 text-grey-100 text-xl font-semibold text-center border-b border-grey-600 sm:py-10 md:py-11 base:py-12 base:pl-7 base:text-left">
-                    Management Job Openings
-                </h2>
+                <SegmentTitle className="text-grey-100 text-xl base:text-left">Management Job Openings</SegmentTitle>
                 <List
                     className="lg:grid lg:grid-cols-3"
                     classNameItem="border-b border-grey-600 lg:border-r lg:last:border-r-0"
@@ -76,9 +71,7 @@ const Careers = () => {
                 />
             </section>
             <section>
-                <h2 className="py-8 text-grey-100 text-xl font-semibold text-center border-b border-grey-600 sm:py-10 md:py-11 base:py-12 base:pl-7 base:text-left">
-                    QA Job Openings
-                </h2>
+                <SegmentTitle className="text-grey-100 text-xl base:text-left">QA Job Openings</SegmentTitle>
                 <List
                     className="lg:grid lg:grid-cols-3"
                     classNameItem="border-b border-grey-600 lg:border-r lg:last:border-r-0"

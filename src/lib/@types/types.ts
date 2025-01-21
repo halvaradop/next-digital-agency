@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image"
 
 export interface ImageAttributes {
-    src: StaticImageData
+    src: StaticImageData | string
     alt: string
 }
 

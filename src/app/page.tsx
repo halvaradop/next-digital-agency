@@ -71,7 +71,9 @@ const Index = () => {
                             className="base:grid base:grid-cols-2"
                             items={homeOurClientSays}
                             classNameItem="border-t border-grey-600 base:odd:border-r"
-                            render={(item) => <ClientSays {...item} />}
+                            render={({ title, description, name, job, avatar }) => (
+                                <ClientSays title={title} description={description} name={name} job={job} avatar={avatar} />
+                            )}
                         />
                     </Box>
                     <Box border="horizontal">
@@ -84,7 +86,7 @@ const Index = () => {
                             className="base:grid base:grid-cols-2"
                             items={frequentlyQuestions}
                             classNameItem="group border-t border-grey-600 base:odd:border-r"
-                            render={(item) => <FrequentlyQuestion {...item} />}
+                            render={({ title, index }) => <FrequentlyQuestion title={title} index={index} />}
                         />
                     </Box>
                     <CallToAction

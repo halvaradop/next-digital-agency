@@ -5,7 +5,8 @@ import { companies } from "@/lib/content/home"
 export const BrandCompanies = () => {
     return (
         <Box
-            className="grid grid-cols-2 items-center justify-items-center relative border-t-0 bg-[#242424] bg-opacity-20 base:grid-cols-6"
+            className="grid grid-cols-2 items-center justify-items-center relative bg-[#242424] bg-opacity-20 base:grid-cols-6"
+            border="horizontal"
             asChild
         >
             <div>

@@ -4,19 +4,11 @@ import { BoxProps } from "@/lib/@types/props"
 
 export const Box = ({ className, children, border, asChild }: BoxProps) => {
     const SlotComponent = asChild ? Slot : "section"
-    return (
-        <SlotComponent
-            className={merge(
-                "border border-grey-600",
-                {
-                    "border-y-0": border === "horizontal",
-                    "border-x-0": border === "vertical",
-                    "border-0": border == "none",
-                },
-                className,
-            )}
-        >
-            {children}
-        </SlotComponent>
-    )
+    const cva: Record<NonNullable<BoxProps["border"]>, string> = {
+        both: "border border-grey-600",
+        horizontal: "border-x border-grey-600",
+        vertical: "border-y border-grey-600",
+        none: "",
+    }
+    return <SlotComponent className={merge(cva[border ?? "none"], className)}>{children}</SlotComponent>
 }

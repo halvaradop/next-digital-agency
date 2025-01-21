@@ -22,11 +22,8 @@ export interface IconSquareProps extends ImageAttributes, ClassNameProps {}
 
 export interface SegmentProps extends Descriptive, ClassNameProps {}
 
-export type CardProps = Descriptive &
-    ClassNameProps & {
-        button?: string
-        classNameButton?: string
-    } & (ImageAttributes | { src?: undefined; alt?: undefined })
+export type CardProps = (Descriptive & ClassNameProps & { button?: string; classNameButton?: string }) &
+    (ImageAttributes | { src?: undefined; alt?: undefined })
 
 export interface ClientSaysProps extends Descriptive {
     avatar: ImageAttributes
@@ -69,3 +66,5 @@ export interface CardIndexProps extends Descriptive, ClassNameProps {
 export interface RegisterProps extends ClassNameProps {
     classNameForm?: string
 }
+
+export interface SegmentTitleProps extends ClassNameProps, ChildrenProps {}

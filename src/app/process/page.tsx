@@ -9,8 +9,9 @@ import { processList } from "@/lib/content/process"
 
 const ProcessPage = () => {
     return (
-        <Box className="w-11/12 mx-auto" border="horizontal">
+        <Box className="w-11/12 mx-auto border-t-0" border="horizontal">
             <Segment
+                className="border-b"
                 title="Process of Starting the Project"
                 description="At SquareUp, we value transparency, collaboration, and delivering exceptional results."
             />
@@ -24,7 +25,15 @@ const ProcessPage = () => {
                 className="base:grid base:grid-cols-2"
                 classNameItem="border-b border-grey-600 base:odd:border-r"
                 items={processList}
-                render={(item) => <CardIndex {...item} />}
+                render={({ title, description, index }) => (
+                    <CardIndex
+                        className="h-full base:grid base:grid-rows-[1fr_1.5fr]"
+                        classNameTitle="h-full content-center"
+                        title={title}
+                        description={description}
+                        index={index}
+                    />
+                )}
             />
             <CallToAction
                 border="none"
