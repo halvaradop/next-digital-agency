@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import { Box } from "@/ui/common/box"
 import { List } from "@/ui/common/list"
 import { Card } from "@/ui/common/card"
@@ -10,6 +11,11 @@ import { BrandCompanies } from "@/ui/home/brand-companies"
 import { FrequentlyQuestion } from "@/ui/home/frequently-question"
 import { frequentlyQuestions } from "@/lib/content/common"
 import { homeChooseSquareUp, homeOurClientSays, homeOurServices } from "@/lib/content/home"
+
+export const metadata: Metadata = {
+    title: "Home",
+    description: "A Digital Product Studio that will Work",
+}
 
 const Index = () => {
     return (

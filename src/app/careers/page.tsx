@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import { Box } from "@/ui/common/box"
 import { Card } from "@/ui/common/card"
 import { List } from "@/ui/common/list"
@@ -12,13 +13,17 @@ import {
 } from "@/lib/content/careers"
 import { CallToActionStartProject } from "@/ui/common/call-to-action-start-project"
 
+const description = "Unlock your potential and join our team of innovators and problem solvers."
+
+export const metadata: Metadata = {
+    title: "Careers",
+    description,
+}
+
 const Careers = () => {
     return (
         <Box className="w-11/12 mx-auto" border="horizontal">
-            <Segment
-                title="Join Our Team at SquareUp"
-                description="Unlock your potential and join our team of innovators and problem solvers."
-            />
+            <Segment title="Join Our Team at SquareUp" description={description} />
             <Card
                 className="border-b border-grey-600"
                 title="Welcome to SquareUp, where talent meets opportunity!"
