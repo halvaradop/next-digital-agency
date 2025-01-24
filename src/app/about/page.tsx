@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Metadata } from "next"
 import { Box } from "@/ui/common/box"
 import { Card } from "@/ui/common/card"
 import { List } from "@/ui/common/list"
@@ -8,13 +9,18 @@ import { CallToActionStartProject } from "@/ui/common/call-to-action-start-proje
 import { aboutList } from "@/lib/content/about"
 import aboutImage from "@/assets/icons/about/about.svg"
 
+const description =
+    "Welcome to SquareUp, where collaboration, expertise, and client-centricity intersect to shape the future of digital innovation."
+
+export const metadata: Metadata = {
+    title: "About Us",
+    description,
+}
+
 const About = () => {
     return (
         <Box className="w-11/12 mx-auto" border="horizontal">
-            <Segment
-                title="About Us"
-                description="Welcome to SquareUp, where collaboration, expertise, and client-centricity intersect to shape the future of digital innovation."
-            />
+            <Segment title="About Us" description={description} />
             <section className="pb-8 border-y border-grey-600 base:px-10 base:grid base:grid-cols-2 base:items-center base:justify-between lg:px-14">
                 <Card
                     className="pb-0"
