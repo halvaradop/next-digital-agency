@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import { Box } from "@/ui/common/box"
 import { Work } from "@/ui/works/work"
 import { Card } from "@/ui/common/card"
@@ -7,13 +8,18 @@ import { CallToAction } from "@/ui/common/call-to-action"
 import { workList } from "@/lib/content/works"
 import { SegmentTitle } from "@/ui/common/segment-title"
 
+const description =
+    "Discover a portfolio of visually stunning and strategically crafted digital projects that showcase our creativity and expertise."
+
+export const metadata: Metadata = {
+    title: "Works",
+    description,
+}
+
 const WorksPage = () => {
     return (
         <Box className="w-11/12 mx-auto" border="horizontal">
-            <Segment
-                title="Our Works"
-                description="Discover a portfolio of visually stunning and strategically crafted digital projects that showcase our creativity and expertise."
-            />
+            <Segment title="Our Works" description={description} />
             <Card
                 className="border-y border-grey-600"
                 title="At SquareUp"

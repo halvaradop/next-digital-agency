@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import { Card } from "@/ui/common/card"
 import { List } from "@/ui/common/list"
 import { Segment } from "@/ui/common/segment"
@@ -5,14 +6,17 @@ import { ServiceList } from "@/ui/services/service-list"
 import { CallToAction } from "@/ui/common/call-to-action"
 import { design, engineering, projectManagement } from "@/lib/content/services"
 
+const description = "Transform your brand with our innovative digital solutions that captivate and engage your audience."
+
+export const metadata: Metadata = {
+    title: "Services",
+    description,
+}
+
 const ServicesPage = () => {
     return (
         <section className="w-11/12 mx-auto">
-            <Segment
-                className="border-x"
-                title="Our Services"
-                description="Transform your brand with our innovatie digital solutions that captive and engage your audience"
-            />
+            <Segment className="border-x" title="Our Services" description={description} />
             <section>
                 <Card
                     className="border-t border-x border-grey-600"
