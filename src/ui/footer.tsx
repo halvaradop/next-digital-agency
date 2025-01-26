@@ -18,25 +18,25 @@ export const Footer = () => {
             </ul>
             <ul className="py-10 text-grey-100 font-medium flex items-center justify-center flex-wrap gap-5 sm:gap-x-6 md:gap-x-7 base:py-0 base:items-start base:flex-col">
                 <li className="hidden text-white text-lg font-semibold base:block base:col-span-2">Catalog</li>
-                <li>
+                <li className="hover:text-green-600">
                     <Link href="/">Home</Link>
                 </li>
-                <li>
+                <li className="hover:text-green-600">
                     <Link href="/services">Services</Link>
                 </li>
-                <li>
+                <li className="hover:text-green-600">
                     <Link href="/works">Works</Link>
                 </li>
-                <li>
+                <li className="hover:text-green-600">
                     <Link href="/process">Process</Link>
                 </li>
-                <li>
+                <li className="hover:text-green-600">
                     <Link href="/about">About</Link>
                 </li>
-                <li>
+                <li className="hover:text-green-600">
                     <Link href="/careers">Careers</Link>
                 </li>
-                <li>
+                <li className="hover:text-green-600">
                     <Link href="/contacts">Contacts</Link>
                 </li>
             </ul>
