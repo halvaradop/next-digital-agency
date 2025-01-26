@@ -28,7 +28,7 @@ const ContactsPage = () => {
                 className="base:grid base:grid-cols-2"
                 items={frequentlyQuestions}
                 classNameItem="group border-t border-grey-600 base:odd:border-r"
-                render={(item) => <FrequentlyQuestion {...item} />}
+                render={({ title, index }) => <FrequentlyQuestion title={title} index={index} />}
             />
             <CallToActionStartProject className="border-t border-grey-600" />
         </Box>

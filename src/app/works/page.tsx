@@ -6,6 +6,7 @@ import { List } from "@/ui/common/list"
 import { Segment } from "@/ui/common/segment"
 import { CallToAction } from "@/ui/common/call-to-action"
 import { workList } from "@/lib/content/works"
+import { SegmentTitle } from "@/ui/common/segment-title"
 
 const description =
     "Discover a portfolio of visually stunning and strategically crafted digital projects that showcase our creativity and expertise."
@@ -20,7 +21,7 @@ const WorksPage = () => {
         <Box className="w-11/12 mx-auto" border="horizontal">
             <Segment title="Our Works" description={description} />
             <Card
-                className="border border-grey-600"
+                className="border-y border-grey-600"
                 title="At SquareUp"
                 description="We have had the privilege of working with a diverse range of clients and delivering exceptional digital products that drive success."
                 button="Here are ten examples of our notable works:"
@@ -29,12 +30,10 @@ const WorksPage = () => {
                 className="base:grid base:grid-cols-2"
                 classNameItem="border-b border-grey-600 base:odd:border-r"
                 items={workList}
-                render={({ title, work }) => (
-                    <article key={title}>
-                        <h2 className="py-8 px-4 text-grey-100 text-xl font-semibold text-center border-b border-grey-600 sm:py-10 md:py-11 base:py-12 base:px-7 base:text-left">
-                            {title}
-                        </h2>
-                        <Work title={work.title} description={work.description} link={work.link} image={work.image} />
+                render={({ title, work: { title: titleWork, description, link, image } }) => (
+                    <article className="h-full grid grid-rows-[1fr_auto]" key={title}>
+                        <SegmentTitle className="content-center text-grey-100 base:text-left">{title}</SegmentTitle>
+                        <Work title={titleWork} description={description} link={link} image={image} />
                     </article>
                 )}
             />

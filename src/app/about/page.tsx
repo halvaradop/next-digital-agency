@@ -5,6 +5,7 @@ import { Card } from "@/ui/common/card"
 import { List } from "@/ui/common/list"
 import { Segment } from "@/ui/common/segment"
 import { CardIndex } from "@/ui/common/card-index"
+import { SegmentTitle } from "@/ui/common/segment-title"
 import { CallToActionStartProject } from "@/ui/common/call-to-action-start-project"
 import { aboutList } from "@/lib/content/about"
 import aboutImage from "@/assets/icons/about/about.svg"
@@ -34,14 +35,14 @@ const About = () => {
                 />
             </section>
             <section>
-                <h2 className="py-8 px-4 text-white text-4xl font-semibold border-b border-grey-600 sm:py-10 md:py-11 base:py-12 base:px-7">
-                    Our Story
-                </h2>
+                <SegmentTitle>Our Story</SegmentTitle>
                 <List
                     className="base:grid base:grid-cols-2"
                     classNameItem="border-b border-grey-600 base:odd:border-r"
                     items={aboutList}
-                    render={(item) => <CardIndex {...item} />}
+                    render={({ title, description, index }) => (
+                        <CardIndex title={title} description={description} index={index} />
+                    )}
                 />
             </section>
             <CallToActionStartProject />

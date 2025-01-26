@@ -22,7 +22,7 @@
 
 @layer utilities {
     .service-item {
-        @apply border-grey-600 first:border-b first:border-r nth-2:border-b nth-3:border-r sm:border-r sm:last:border-r-0 sm:first:border-b-0 sm:nth-2:border-b-0;
+        @apply border-grey-600 even:border-l first:border-b nth-2:border-b base:nth-2:border-r base:first:border-b-0 base:nth-2:border-b-0;
     }
 
     .bg-gradient-service {
