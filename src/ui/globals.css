@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body:has(header[data-open="true"]) {
+        overflow: hidden;
+        padding-right: 0.5rem;
+    }
+
+    .aside-menu {
+        @apply absolute inset-y-0 right-0 z-10 transition duration-700 ease-in-out translate-x-full data-[open='true']:translate-x-0 base:data-[open='false']:translate-x-0;
+    }
+
+    @media (min-width: 900px) {
+        body:has(header[data-open="true"]) {
+            overflow-y: auto;
+            padding-right: 0rem;
+        }
+    }
+}
+
 @layer utilities {
     .service-item {
         @apply border-grey-600 even:border-l first:border-b nth-2:border-b base:nth-2:border-r base:first:border-b-0 base:nth-2:border-b-0;
@@ -11,5 +29,9 @@
         border: 1px solid #2e2e2e;
         background: linear-gradient(229deg, rgba(158, 255, 0, 0.2) -68.25%, rgba(158, 255, 0, 0) 32.16%),
             linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+    }
+
+    .link-active {
+        @apply bg-grey-600;
     }
 }

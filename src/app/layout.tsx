@@ -51,7 +51,7 @@ export default function RootLayout({ children }: ChildrenProps) {
     return (
         <html lang="en">
             <body
-                className={`${barlow.variable} min-h-dvh grid grid-rows-[auto_1fr_auto] antialiased bg-grey-700 scroll:w-2 track:my-2 thumb:rounded-full thumb:bg-grey-600`}
+                className={`${barlow.variable} min-h-dvh grid grid-rows-[auto_1fr_auto] antialiased overflow-x-hidden bg-grey-700 scroll:w-2 track:my-2 thumb:rounded-full thumb:bg-grey-600`}
             >
                 <Header />
                 <Box border="vertical">{children}</Box>
