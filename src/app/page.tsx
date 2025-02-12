@@ -11,6 +11,7 @@ import { BrandCompanies } from "@/ui/home/brand-companies"
 import { FrequentlyQuestion } from "@/ui/home/frequently-question"
 import { frequentlyQuestions } from "@/lib/content/common"
 import { homeChooseSquareUp, homeOurClientSays, homeOurServices } from "@/lib/content/home"
+import Link from "next/link"
 
 export const metadata: Metadata = {
     title: "Home",
@@ -33,8 +34,12 @@ const Index = () => {
                     </Box>
                 </div>
                 <div className="flex items-center gap-x-5">
-                    <Button className="border-grey-500/20 bg-[#242424]/30">Our Works</Button>
-                    <Button variant="secondary">Contact Us</Button>
+                    <Button className="border-grey-500/20 bg-[#242424]/30" asChild>
+                        <Link href="/works">Our Works</Link>
+                    </Button>
+                    <Button variant="secondary" asChild>
+                        <Link href="/contacts">Contact Us</Link>
+                    </Button>
                 </div>
             </section>
             <section className="border-t border-grey-600">
