@@ -25,7 +25,9 @@ export const CallToActionStartProject = ({ className }: ClassNameProps) => {
                 <p className="my-4 p-4 text-white text-lg rounded-lg bg-grey-600 base:my-0 base:p-2 base:text-base">
                     Where collaboration, Expertise, and Client-Centricity Intersect to Shape the Future of Digital Innovation.
                 </p>
-                <Button className="mx-auto text-black border-green-700 bg-green-700">Start Project</Button>
+                <Button className="mx-auto" variant="secondary">
+                    Start Project
+                </Button>
             </div>
         </section>
     )

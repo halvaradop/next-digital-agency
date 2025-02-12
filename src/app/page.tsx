@@ -33,8 +33,8 @@ const Index = () => {
                     </Box>
                 </div>
                 <div className="flex items-center gap-x-5">
-                    <Button className="border-grey-600 bg-grey-700/80">Our Works</Button>
-                    <Button className="text-black border-green-700 bg-green-700">Contact Us</Button>
+                    <Button className="border-grey-500/20 bg-[#242424]/30">Our Works</Button>
+                    <Button variant="secondary">Contact Us</Button>
                 </div>
             </section>
             <section className="border-t border-grey-600">

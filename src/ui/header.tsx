@@ -73,7 +73,7 @@ export const Header = () => {
                                 Careers
                             </Link>
                         </li>
-                        <Button className="text-black border-green-700 bg-green-700 base:ml-auto" asChild>
+                        <Button className="base:ml-auto" variant="secondary" asChild>
                             <Link href="/contacts" onClick={handleToggle}>
                                 Contact Us
                             </Link>

@@ -14,7 +14,7 @@ export const Work = ({ className, title, description, link, image }: WorkProps) 
             <div>
                 <h3 className="text-grey font-medium text-lg">{title}</h3>
                 <div className="grid items-end grid-cols-[1fr_auto] gap-x-3">
-                    <Button className="text-sm text-grey-100 border-grey-600 bg-grey-600" asChild>
+                    <Button className="text-sm text-grey-100" asChild>
                         <Link href={link}>{link}</Link>
                     </Button>
                     <Link className="size-12 grid place-content-center rounded bg-grey-600" href={link}>

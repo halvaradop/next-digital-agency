@@ -14,9 +14,7 @@ export const Card = ({ className, classNameButton, title, description, button, s
             )}
             {!src && <h2 className="text-white text-2xl font-bold">{title}</h2>}
             <p className="mt-4 text-grey">{description}</p>
-            {button && (
-                <Button className={merge("h-auto mt-8 py-2 border-grey-600 bg-grey-600", classNameButton)}>{button}</Button>
-            )}
+            {button && <Button className={merge("h-auto mt-8 py-2", classNameButton)}>{button}</Button>}
         </article>
     )
 }
