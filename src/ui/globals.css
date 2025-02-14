@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --color-primary: #262626;
+    --color-primary-hover: #333333;
+
+    --color-secondary: #9dff00;
+    --color-secondary-hover: #b1ff33;
+
+    --color-font-100: #fff;
+    --color-font-200: #262626;
+
+    --color-input: #333333;
+    --color-input-background: #242424;
+
+    --color-green: #9dff00;
+    --color-green-hover: #b1ff33;
+}
+
 @layer base {
     body:has(header[data-open="true"]) {
         overflow: hidden;

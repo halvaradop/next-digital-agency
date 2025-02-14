@@ -11,11 +11,11 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@halvaradop/ui-button": "0.3.2-beta.0",
-    "@halvaradop/ui-checkbox": "0.1.0-beta.0",
-    "@halvaradop/ui-core": "0.2.1-beta.0",
-    "@halvaradop/ui-input": "0.2.2-beta.0",
-    "@halvaradop/ui-label": "0.1.2-beta.0",
+    "@halvaradop/ui-button": "0.4.0-beta.1",
+    "@halvaradop/ui-checkbox": "0.2.0-beta.1",
+    "@halvaradop/ui-core": "0.3.0-beta.1",
+    "@halvaradop/ui-input": "0.3.0-beta.1",
+    "@halvaradop/ui-label": "0.2.0-beta.1",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

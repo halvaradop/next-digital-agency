@@ -19,7 +19,7 @@ export const CallToAction = ({ className, border, title, description, button }: 
                 <Image src={logoIcon} alt="SquareUp Icon" />
                 <h3 className="text-white text-2xl font-semibold">{title}</h3>
                 <p className="text-grey text-sm">{description}</p>
-                <Button className="text-black border-green-700 bg-green-700">{button}</Button>
+                <Button variant="secondary">{button}</Button>
             </div>
         </Box>
     )
