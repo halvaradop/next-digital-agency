@@ -1,7 +1,7 @@
 import { List } from "@/ui/common/list"
 import { IconSquare } from "@/ui/common/icon"
 import { ServiceListProps } from "@/lib/@types/props"
-import { SegmentTitle } from "../common/segment-title"
+import { SegmentTitle } from "@/ui/common/segment-title"
 
 export const ServiceList = ({ title, services }: ServiceListProps) => {
     return (
