@@ -36,6 +36,9 @@ importers:
       '@halvaradop/tailwindcss-utilities':
         specifier: ^0.2.3
         version: 0.2.3
+      '@halvaradop/ts-utility-types':
+        specifier: ^0.17.0
+        version: 0.17.0
       '@types/node':
         specifier: ^20
         version: 20.17.12
@@ -45,18 +48,12 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.0.3(@types/react@19.0.6)
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       postcss:
         specifier: ^8
         version: 8.5.0
       prettier:
         specifier: ^3.4.2
         version: 3.4.2
-      tailwind-merge:
-        specifier: ^2.6.0
-        version: 2.6.0
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.17
@@ -75,6 +72,9 @@ packages:
 
   '@halvaradop/tailwindcss-utilities@0.2.3':
     resolution: {integrity: sha512-z8e3hdNLpgV7Pv46VL0zboLAhxC63xUt/8iYqiYO3TJxBlcWQZkAuyN7LZVH1x/FfqVCxo0YgMLYZ3HlRQ0IHw==}
+
+  '@halvaradop/ts-utility-types@0.17.0':
+    resolution: {integrity: sha512-hEkBvjLjCHJhIN51ErlkfpgxJXgFa0YKI6HHShN7YSx8rVq/v6FprhCt94xNHhLNlvvSpyIWHO+j3U3+1Pj3TQ==}
 
   '@halvaradop/ui-button@0.4.0-beta.1':
     resolution: {integrity: sha512-ZymK9i1tikcVY2/N20g7KIu45o6h+Si5x8i0Ak0GnYWr85zYMC5P4WLSWex8drNH8Wdy/yxqFjfK5hS059UNLg==}
@@ -365,10 +365,6 @@ packages:
 
   clsx@2.0.0:
     resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
-    engines: {node: '>=6'}
-
-  clsx@2.1.1:
-    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
 
   color-convert@2.0.1:
@@ -811,6 +807,8 @@ snapshots:
 
   '@halvaradop/tailwindcss-utilities@0.2.3': {}
 
+  '@halvaradop/ts-utility-types@0.17.0': {}
+
   '@halvaradop/ui-button@0.4.0-beta.1':
     dependencies:
       '@halvaradop/ui-core': 0.3.0-beta.1
@@ -1053,8 +1051,6 @@ snapshots:
   client-only@0.0.1: {}
 
   clsx@2.0.0: {}
-
-  clsx@2.1.1: {}
 
   color-convert@2.0.1:
     dependencies:

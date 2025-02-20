@@ -1,9 +1,5 @@
-import { Descriptive, ImageAttributes, Service } from "@/lib/@types/types"
+import { BorderOptions, Descriptive, ImageAttributes, Service } from "@/lib/@types/types"
 import { SlotProps } from "@halvaradop/ui-core"
-
-export interface LayoutProps {
-    children: React.ReactNode
-}
 
 export interface ClassNameProps {
     className?: string
@@ -38,7 +34,7 @@ export interface FrequentlyQuestionProps {
 
 export interface CallToActionProps extends Descriptive, ClassNameProps {
     button: string
-    border?: "vertical" | "horizontal" | "both" | "none"
+    border?: BorderOptions
 }
 
 export interface ListProps<T extends object> extends ClassNameProps {
@@ -50,7 +46,7 @@ export interface ListProps<T extends object> extends ClassNameProps {
 export type BoxProps = ClassNameProps &
     ChildrenProps &
     SlotProps<"section"> & {
-        border?: "vertical" | "horizontal" | "both" | "none"
+        border?: BorderOptions
     }
 
 export interface WorkProps extends Descriptive, ClassNameProps {
